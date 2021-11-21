@@ -1,0 +1,36 @@
+지원하는 DBCP(Data Base Connection Pool)
+Hikari CP, Tomcat CP, APACHE Commons DBCP2
+
+Spring Boot -> 기본적으로 HikariCP를 선정했습니다.
+
+
+Hikari 프로퍼티 설정 가능 -> application.properties
+DBCP 설정
+    spring.datasource.hikari.*
+    spring.datasource.tomcat.*
+    spring.datasource.dbcp2.*
+DBCP는 학습을 충분히 하고, 선택 한 DBCP에 대해 여러설정에 대해 공부하고, 버그 리포팅이 없는지 예의 주시 해야 함.
+
+DBCP NAVER D2 글 공부 진행
+
+
+DOCKER 로 실행하자.
+
+*해당 컨테이너 실행
+ docker exec -i -t {id} bash
+
+*해당 컨테이너 정지
+ docker stop {id}
+
+*해당 이미지 삭제
+ docker rm {id}
+
+*도커 생성 및 실행
+ docker run -p 3306:3306 --name mysql_boot -e MYSQL_ROOT_PASSWORD=1 -e MYSQL_DATABASE=springboot -e MYSQL_USER=hyunsooryu -e MYSQL_PASSWORD=pass -d mysql
+
+
+
+
+
+
+

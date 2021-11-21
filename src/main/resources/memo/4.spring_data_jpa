@@ -1,0 +1,22 @@
+ORM 과 JPA
+객체와 릴레이션을 맵핑할 때 발생하는 개념적 불일치를 해결하는 프레임워크
+
+JPA란 ? ORM을 위한 자바 (EE) 표준
+
+스프링 데이터 JPA
+
+Repository 빈 자동 생성
+쿼리 메소드 자동 구현
+@EnableJpaRepositories(스프링 부트가 자동으로 설정 해 줌)
+
+스프링 데이터 JPA 의존성 추가
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+
+@DataJpaTest
+슬라이싱 테스트를 할때는 반드시, 인메모리 데이터 베이스가 필요합니다.
+H2 와 같은 DB가 꼭 필요합니다.
